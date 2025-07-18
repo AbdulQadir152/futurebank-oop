@@ -45,5 +45,3 @@ This UML class diagram illustrates the architecture of FutureBank:
 - Concepts: Object-Oriented Programming (OOP)
 - Interface: Console-based
 - Core Concepts: Inheritance, Virtual Inheritance, Dynamic Memory Allocation, Constructors, Destructors
-
----

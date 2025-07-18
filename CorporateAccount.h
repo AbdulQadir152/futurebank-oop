@@ -1,18 +1,18 @@
-#ifndef COOPERATEACCOUNT_H
-#define COOPERATEACCOUNT_H
+#ifndef CORPORATEACCOUNT_H
+#define CORPORATEACCOUNT_H
 
 #include <string>
 #include "Account.h"
 
-class CooperateAccount : virtual public Account
+class CorporateAccount : virtual public Account
 {
 protected:
     float interestRate;
     std::string openingDate;
 
 public:
-    CooperateAccount();
-    CooperateAccount(int accNo, int bal, float intRate, std::string openDate);
+    CorporateAccount();
+    CorporateAccount(int accNo, int bal, float intRate, std::string openDate);
 
     void applyAnnualInterest();
     void updateInterestRate(float newRate);

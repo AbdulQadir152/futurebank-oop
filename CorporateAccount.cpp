@@ -1,14 +1,14 @@
-#include "CooperateAccount.h"
+#include "CorporateAccount.h"
 #include <iostream>
 
 using namespace std;
 
-CooperateAccount::CooperateAccount() : Account(), interestRate(0.0), openingDate("") {}
+CorporateAccount::CorporateAccount() : Account(), interestRate(0.0), openingDate("") {}
 
-CooperateAccount::CooperateAccount(int accNo, int bal, float intRate, string openDate)
+CorporateAccount::CorporateAccount(int accNo, int bal, float intRate, string openDate)
     : Account(accNo, bal), interestRate(intRate), openingDate(openDate) {}
 
-void CooperateAccount::applyAnnualInterest()
+void CorporateAccount::applyAnnualInterest()
 {
     int balanceBefore = getBalance();
     int interest = static_cast<int>(balanceBefore * interestRate / 100);
@@ -16,7 +16,7 @@ void CooperateAccount::applyAnnualInterest()
     cout << "Annual interest of " << interest << " applied at rate " << interestRate << "%.\n";
 }
 
-void CooperateAccount::updateInterestRate(float newRate)
+void CorporateAccount::updateInterestRate(float newRate)
 {
     if (newRate >= 0.0)
     {
@@ -29,7 +29,7 @@ void CooperateAccount::updateInterestRate(float newRate)
     }
 }
 
-void CooperateAccount::showCorporateAccountInfo() const
+void CorporateAccount::showCorporateAccountInfo() const
 {
     cout << "Corporate Account Info:\n";
     cout << "  Opening Date: " << openingDate << endl;
