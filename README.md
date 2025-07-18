@@ -47,9 +47,3 @@ This UML class diagram illustrates the architecture of FutureBank:
 - Core Concepts: Inheritance, Virtual Inheritance, Dynamic Memory Allocation, Constructors, Destructors
 
 ---
-
-## 🚀 How to Compile and Run
-
-### 🔧 Compile:
-```bash
-g++ BankSystems.cpp -o FutureBank
